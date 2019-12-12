@@ -1,6 +1,6 @@
 {
   "name": "erria",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "return error in array, remove the need of using try catch",
   "main": "index.ts",
   "scripts": {
@@ -17,5 +17,6 @@
   "devDependencies": {
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
-  }
+  },
+  "repository": "https://github.com/lequanghuylc/erria"
 }
