@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "module": "commonjs",
+    "target": "es2017",
+    "sourceMap": true,
+    "experimentalDecorators": true
+  }
+}

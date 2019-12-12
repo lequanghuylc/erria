@@ -1,0 +1,21 @@
+{
+  "name": "erria",
+  "version": "0.1.0",
+  "description": "return error in array, remove the need of using try catch",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node test.ts"
+  },
+  "keywords": [
+    "Error",
+    "Try",
+    "catch",
+    "typescript"
+  ],
+  "author": "Le Quang Huy <lequanghuylc@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
