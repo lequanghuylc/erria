@@ -1,6 +1,6 @@
 {
   "name": "erria",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "return error in array, remove the need of using try catch",
   "main": "index.js",
   "scripts": {

@@ -8,7 +8,9 @@ function erria(target, propertyName, propertyDesciptor) {
     if (isAsync_1.isAsync(method)) {
         propertyDesciptor.value = async function (...args) {
             try {
-                const result = await method.apply(this, args);
+                let result = await method.apply(this, args);
+                if (isAsync_1.isPromise(result))
+                    result = await result;
                 return [result, null];
             }
             catch (err) {

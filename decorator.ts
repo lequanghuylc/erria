@@ -1,4 +1,4 @@
-import { isAsync } from './isAsync';
+import { isAsync, isPromise } from './isAsync';
 
 export default function erria(
   target: Object,
@@ -11,7 +11,8 @@ export default function erria(
   if (isAsync(method)) {
     propertyDesciptor.value = async function (...args: any[]) {
       try {
-        const result = await method.apply(this, args);
+        let result = await method.apply(this, args);
+        if (isPromise(result)) result = await result;
         return [result, null];
       } catch(err) {
         return [null, err]
